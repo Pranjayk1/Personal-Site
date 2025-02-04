@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: skyblue;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    background-color: #333; /* Dark background */
+    padding: 12px 28px;
+    border-radius: 8px; /* Rounded box effect */
+    border: 2px solid transparent; /* Border that changes on hover */
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block; /* Ensures padding applies correctly */
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-item a:hover {
+    background-color: #ff6600; /* Highlight color */
+    border-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Centers the navbar */
+    align-items: center;
+    height: 80px; /* Adjust the height as needed */
+    width: 100%;
+}
+
+.profile-img {
+    width: 60%; /* Adjust size */
+    height: auto; /* Ensures circular shape */
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures proper fit */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for styling */
+}
+
+.home-container {
+    background-color: #219EBC;
+    padding: 10% 15%;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    gap: 15px;
+    padding: 50px;
+}
+
+.hero-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.combine-hero {
+    grid-column: span 2;
+    padding: 0;
+    margin: 0;
+}
+
+.lead {
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+.subtitle {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.resume-container {
+    background-color: antiquewhite;
+    padding: 5% 15%;   
+}
+
+.lead-head {
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+    text-decoration-line: underline;
+}
+
+.res-content-headline {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.res-body li {
+    padding: 1rem 0rem;
+}
+
+.res-content li {
+    font-size: 1.5rem;
+}
+
+.project-container {
+    background-color: #ff6600;
+    padding: 5% 15%;
+}
+
+.aboutme-container {
+    background-color: #219EBC;
+    padding: 5% 15%;
+}
+
+.project-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 1rem;
+}
+
+.card {
+    display: grid;
+    width: 20rem;
+    height: 25rem;
+    grid-template-rows: 1fr 0.7fr 0.3fr;
+    background-color: #023047;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.card-img {
+    width: 20rem;
+    height: 12.5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.desc {
+    padding: 1rem;
+}
+.proj-title {
+    color: white;
+    font-size: 1.5rem;
+}
+/* Style for primary button */
+.btn-primary {
+    background-color: #023047; /* Vibrant color */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.links {
+    display: flex;
+    gap: 20px;
+    padding:0rem 1rem 1rem 1.2rem;
+}
+.btn-git {
+    background-color: #FFB703;
+    color: #333;
+    border: none;
+    padding: 0px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.about-body {
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.about-body img {
+    float: left;
+    height: 20%;
+    width: 25%;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.contact-container {
+    background-color: antiquewhite;
+    padding: 5% 15%;
+}
+
+fieldset {
+    font-size: 2rem;
+    padding: 25px 25px;
+    font-weight: 200;
+}
+
+fieldset p {
+    padding: 10px 0px;
+}
+
+
+/* Hover effect for primary button */
+.btn-primary:hover {
+    background-color: #023047;
+    transform: scale(1.05);
+}
+
+/* Style for outline button */
+.btn-outline-secondary {
+    background-color: transparent;
+    color: whitesmoke;
+    border: 2px solid white;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for outline button */
+.btn-outline-secondary:hover {
+    background-color: #ff6600;
+    border: #ff6600;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Improve button layout */
+.buttons {
+    display: flex;
+    gap: 20px; /* Adds space between buttons */
+    margin-top: 20px; /* Adds spacing above buttons */
+}
+
+footer {
+    background-color: skyblue;
+    padding: 5% 15%;
+    font-size: 2rem;
+}
+
+
+/* Center text and image */
+@media (min-width: 992px) { /* Large screens */
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
